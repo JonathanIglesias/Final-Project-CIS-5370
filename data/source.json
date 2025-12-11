@@ -1,0 +1,37 @@
+[
+  {
+    "domain": "thehackernews.com",
+    "seeds": [
+      "https://thehackernews.com/news-sitemap.xml",
+      "https://thehackernews.com/search/label/ransomware"
+    ],
+    "article_regex": "/20\\d{2}/\\d{2}/[^/]+\\.html$"
+  },
+  {
+    "domain": "www.cisa.gov",
+    "seeds": [
+      "https://www.cisa.gov/news-events/cybersecurity-advisories",
+      "https://www.cisa.gov/stopransomware/alerts",
+      "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-109a"
+    ],
+    "article_regex": "/news-events/(cybersecurity-advisories|alerts)/.+|/stopransomware/.+"
+  },
+  {
+    "domain": "attack.mitre.org",
+    "seeds": [
+      "https://attack.mitre.org/tactics/",
+      "https://attack.mitre.org/techniques/enterprise/",
+      "https://attack.mitre.org/techniques/T1594/"
+    ],
+    "article_regex": "/(techniques|tactics)/[A-Z][A0-9]+.*|/techniques/enterprise/.*"
+  },
+  {
+    "domain": "krebsonsecurity.com",
+    "seeds": [
+      "https://krebsonsecurity.com/category/ransomware/",
+	  "https://krebsonsecurity.com/wp-sitemap-posts-post-1.xml",
+	  "http://krebsonsecurity.com/sitemap.xml"
+    ],
+	"article_regex": "/20\\d{2}"
+  }
+]
